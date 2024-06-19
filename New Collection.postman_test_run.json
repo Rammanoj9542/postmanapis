@@ -1,0 +1,312 @@
+{
+	"id": "ccd67be9-0856-44c4-a04b-ca52f42f7074",
+	"name": "New Collection",
+	"timestamp": "2024-06-14T08:37:01.479Z",
+	"collection_id": "35236232-5c8f1c5f-29d8-4ca4-8d5a-4e2fc9b06853",
+	"folder_id": "35236232-669bc77b-d656-4147-adfa-0449f9226f70",
+	"environment_id": "35236232-9b2b407c-fde6-4630-ac1f-53e305688bda",
+	"totalPass": 0,
+	"delay": "1",
+	"persist": true,
+	"status": "error",
+	"startedAt": "2024-06-14T08:36:35.829Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "9bcf6ad0-de8d-4563-9b98-a8b688ed489e",
+			"name": "LOGIN",
+			"url": "http://172.25.1.238:5001/api/login",
+			"time": 654,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				654
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "dbb45a85-4732-477a-b65a-f58687cca7da",
+			"name": "getusecases",
+			"url": "http://172.25.1.238:5001/api/getUseCases",
+			"time": 84,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				84
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "14f3afaa-be60-4c1f-9f19-d039bb918702",
+			"name": "createspace",
+			"url": "http://172.25.1.238:5001/api/createSpace",
+			"time": 16,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				16
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "c9afd89b-1efa-4353-b5f2-21447bd4ef2a",
+			"name": "getSpaces",
+			"url": "http://172.25.1.238:5001/api/getSpaces",
+			"time": 17,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				17
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "1d37220c-faa7-4246-8612-77fe08c620c0",
+			"name": "getUnassignedAdmins",
+			"url": "http://172.25.1.238:5001/api/getUnassignedAdmins",
+			"time": 13,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				13
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "0dc5b15c-39b5-48ab-92a1-5e1daaaf257f",
+			"name": "assignSpace",
+			"url": "http://172.25.1.238:5001/api/assignSpace",
+			"time": 15,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				15
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "347c94e2-9677-4c82-89e4-16e15cfaac2a",
+			"name": "unassignSpace",
+			"url": "http://172.25.1.238:5001/api/unassignSpace",
+			"time": 12,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				12
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "964b48f6-ac47-425c-8173-a75c0241ac46",
+			"name": "updateSpaceName",
+			"url": "http://172.25.1.238:5001/api/updateSpaceName",
+			"time": 48,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				48
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "9080c68f-b0cb-4c55-88b3-a8427c17fb9a",
+			"name": "getAssignedUseCases",
+			"url": "http://172.25.1.238:5001/api/getAssignedUseCases",
+			"time": 12,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				12
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "d80b1440-fe81-4c13-837c-de46734a2568",
+			"name": "unassignUseCase",
+			"url": "http://172.25.1.238:5001/api/unassignUseCase",
+			"time": 14,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				14
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "817beb26-3bfd-4398-b0f3-45a2f01778f2",
+			"name": "assignUseCase",
+			"url": "http://172.25.1.238:5001/api/assignUseCase",
+			"time": 20,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				20
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "c8498ba1-355e-489e-a49f-4ee02bacb5ee",
+			"name": "getassignedAdmins",
+			"url": "http://172.25.1.238:5001/api/getassignedAdmins",
+			"time": 16,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				16
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "ae6696df-8099-4646-9812-58885c252732",
+			"name": "getUnassignedUseCases",
+			"url": "http://172.25.1.238:5001/api/getUnassignedUseCases",
+			"time": 29,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				29
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 950,
+	"collection": {
+		"requests": [
+			{
+				"id": "9bcf6ad0-de8d-4563-9b98-a8b688ed489e",
+				"method": "POST"
+			},
+			{
+				"id": "dbb45a85-4732-477a-b65a-f58687cca7da",
+				"method": "POST"
+			},
+			{
+				"id": "14f3afaa-be60-4c1f-9f19-d039bb918702",
+				"method": "POST"
+			},
+			{
+				"id": "c9afd89b-1efa-4353-b5f2-21447bd4ef2a",
+				"method": "POST"
+			},
+			{
+				"id": "1d37220c-faa7-4246-8612-77fe08c620c0",
+				"method": "POST"
+			},
+			{
+				"id": "0dc5b15c-39b5-48ab-92a1-5e1daaaf257f",
+				"method": "POST"
+			},
+			{
+				"id": "347c94e2-9677-4c82-89e4-16e15cfaac2a",
+				"method": "POST"
+			},
+			{
+				"id": "964b48f6-ac47-425c-8173-a75c0241ac46",
+				"method": "POST"
+			},
+			{
+				"id": "9080c68f-b0cb-4c55-88b3-a8427c17fb9a",
+				"method": "POST"
+			},
+			{
+				"id": "d80b1440-fe81-4c13-837c-de46734a2568",
+				"method": "POST"
+			},
+			{
+				"id": "817beb26-3bfd-4398-b0f3-45a2f01778f2",
+				"method": "POST"
+			},
+			{
+				"id": "c8498ba1-355e-489e-a49f-4ee02bacb5ee",
+				"method": "POST"
+			},
+			{
+				"id": "ae6696df-8099-4646-9812-58885c252732",
+				"method": "POST"
+			},
+			{
+				"id": "20967492-285e-4b97-a5be-668b488e5f9c",
+				"method": "POST"
+			}
+		]
+	}
+}
