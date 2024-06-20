@@ -14,7 +14,7 @@ _postman_id,name,schema,_exporter_id,name,item,,,,,,,,,,,,,,,,
 ,,,,,getusecases,,,,,POST,,raw,"{
     ""sessionId"":{{sessionId}}
 }",json,http://172.25.1.238:5001/api/getUseCases,http,172,5001,api,200 ok,"{""status_code"":200,""usecases"":{""GT1"":""SkillPractice"",""CB1"":""ChatBot""}}"
-,,,,,createspace,,,,,POST,,raw," {
+,,,,,createspace,,,,,POST,,raw,"{
   ""sessionId"": {{sessionId}},
    ""data"": { ""spaceName"": ""manoj"", ""useCases"": [ ""GT1"" ] }
  }",json,http://172.25.1.238:5001/api/createSpace,http,172,5001,api,200 ok,"{""status_code"":200,""detail"":""Space Created Successfully""}"
@@ -40,91 +40,91 @@ _postman_id,name,schema,_exporter_id,name,item,,,,,,,,,,,,,,,,
 ,,,,,getAssignedUseCases,,,,,POST,,raw,"{
     ""sessionId"":{{sessionId}},
     ""spaceId"":""uldv""
-}",json,http://172.25.1.238:5001/api/getAssignedUseCases,http,172,5001,api,,"{""status_code"":200,""assignedUseCases"":{""GT1"":""SkillPractice""}}"
+}",json,http://172.25.1.238:5001/api/getAssignedUseCases,http,172,5001,api,200 ok,"{""status_code"":200,""assignedUseCases"":{""GT1"":""SkillPractice""}}"
 ,,,,,unassignUseCase,,,,,POST,,raw,"{
     ""sessionId"":{{sessionId}},
     ""data"":{""useCaseIds"":[""GT1""],""spaceId"":""uldv""}
-}",json,http://172.25.1.238:5001/api/unassignUseCase,http,172,5001,api,,"{""status_code"":200,""detail"":""Use Cases ['GT1'] Removed From Space edab Successfully""}"
+}",json,http://172.25.1.238:5001/api/unassignUseCase,http,172,5001,api,200 ok,"{""status_code"":200,""detail"":""Use Cases ['GT1'] Removed From Space edab Successfully""}"
 ,,,,,assignUseCase,,,,,POST,,raw,"{
     ""sessionId"":{{sessionId}},
     ""data"":{""spaceId"":""uldv"",""useCaseIds"":[""GT1""]}
-}",json,http://172.25.1.238:5001/api/assignUseCase,http,172,5001,api,,"{""status_code"":200,""detail"":""Use Cases ['GT1'] Added To Space edab""}"
+}",json,http://172.25.1.238:5001/api/assignUseCase,http,172,5001,api,200 ok,"{""status_code"":200,""detail"":""Use Cases ['GT1'] Added To Space edab""}"
 ,,,,,getassignedAdmins,,,,,POST,,raw,"{
     ""sessionId"":{{sessionId}},
     ""spaceId"":""iknf""
-}",json,http://172.25.1.238:5001/api/getassignedAdmins,http,172,5001,api,,"{""status_code"":200,""assignedAdmins"":[{""userId"":""27J4"",""username"":""admin1""},{""userId"":""27J4"",""username"":""admin""}]}"
+}",json,http://172.25.1.238:5001/api/getassignedAdmins,http,172,5001,api,200 ok,"{""status_code"":200,""assignedAdmins"":[{""userId"":""27J4"",""username"":""admin1""},{""userId"":""27J4"",""username"":""admin""}]}"
 ,,,,,getUnassignedUseCases,,,,,POST,,raw,"{
     ""sessionId"":{{sessionId}},
     ""spaceId"":""uldv""
-}",json,http://172.25.1.238:5001/api/getUnassignedUseCases,http,172,5001,api,,"{""status_code"":200,""unassignedUseCases"":{""CB1"":""ChatBot""}}"
+}",json,http://172.25.1.238:5001/api/getUnassignedUseCases,http,172,5001,api,200 ok,"{""status_code"":200,""unassignedUseCases"":{""CB1"":""ChatBot""}}"
 ,,,,,deletespaces,,,,,POST,,raw,"{
     ""sessionId"":{{sessionId}},
     ""data"":{""spaceId"": ""jkcj"", ""userIds"": [ ""27J4"" ] }
-}",json,http://172.25.1.165:5001/api/deleteSpaces,http,172,5001,api,,"{""status_code"":200,""detail"":""Spaces Removed Successfully""}"
+}",json,http://172.25.1.165:5001/api/deleteSpaces,http,172,5001,api,200 ok,"{""status_code"":200,""detail"":""Spaces Removed Successfully""}"
 ,,,,,getAdminDetails,,,,,POST,,raw,"{
     ""sessionId"":{{sessionId}}
    
-}",json,http://172.25.1.238:5001/api/getAdminDetails,http,172,5001,api,,"{""status_code"":200,""adminDetails"":[{""userId"":""27J4"",""username"":""admin1"",""email"":""admin1@gmail.com"",""activeStatus"":""active""}"
+}",json,http://172.25.1.238:5001/api/getAdminDetails,http,172,5001,api,200 ok,"{""status_code"":200,""adminDetails"":[{""userId"":""27J4"",""username"":""admin1"",""email"":""admin1@gmail.com"",""activeStatus"":""active""}"
 ,,,,,UpdateAdminDetails,,,,,POST,,raw,"{
     ""sessionId"":{{sessionId}},
     ""data"":{ ""userId"": ""27J4"",""spaceName"":""Java"" }
-}",json,http://172.25.1.165:5001/api/updateAdminDetails,http,172,5001,api,,"{""status_code"":200,""detail"":""Admin Details Updated Successfully""}"
+}",json,http://172.25.1.165:5001/api/updateAdminDetails,http,172,5001,api,200 ok,"{""status_code"":200,""detail"":""Admin Details Updated Successfully""}"
 ,,,,Admin routes,getAssignedSpaces,,,,,POST,,raw,"{
     ""sessionId"":""df9d346d7d63929a1e85d1f586018e2a88151e836a17682d84fcb4fd88a548ba""
-}",json,http://172.25.1.238:5001/api/getAssignedSpaces,http,172,5001,api,,"{""status_code"":200,""assignedSpaces"":[{""iknf"":""Demo1""}]}"
+}",json,http://172.25.1.238:5001/api/getAssignedSpaces,http,172,5001,api,200 ok,"{""status_code"":200,""assignedSpaces"":[{""iknf"":""Demo1""}]}"
 ,,,,,getSpaceUseCases,,,,,POST,,raw,"{
     ""sessionId"":{{adminsessionId}},
     ""spaceId"":""uldv""
-}",json,http://172.25.1.238:5001/api/getSpaceUseCases,http,172,5001,api,,"{""status_code"":200,""spaceUseCases"":{""CB1"":""ChatBot""}}"
+}",json,http://172.25.1.238:5001/api/getSpaceUseCases,http,172,5001,api,200 ok,"{""status_code"":200,""spaceUseCases"":{""CB1"":""ChatBot""}}"
 ,,,,,createHierarchy,,,,,POST,,raw,"{
     ""sessionId"":{{adminsessionId}},
     ""data"":{""spaceId"":""uldv"",""useCaseId"":""GT1"", ""hierarchyName"":""hbbs""}
     
- }",json,http://172.25.1.238:5001/api/createHierarchy,http,172,5001,api,,"{""status_code"":200,""detail"":""Hierarchy Created Successfully""}"
+ }",json,http://172.25.1.238:5001/api/createHierarchy,http,172,5001,api,200 ok,"{""status_code"":200,""detail"":""Hierarchy Created Successfully""}"
 ,,,,,getUnassignedUsers,,,,,POST,,raw,"{
     ""sessionId"":{{adminsessionId}},
     ""hierarchyId"": ""hbbs""
     
- }",json,http://172.25.1.238:5001/api/getUnassignedUsers,http,172,5001,api,,"{""status_code"":200,""unassignedUsers"":[{""userId"":""E8YU"",""username"":""trainer1""},{""userId"":""OEHG"",""username"":""trainee4""}]}"
+ }",json,http://172.25.1.238:5001/api/getUnassignedUsers,http,172,5001,api,200 ok,"{""status_code"":200,""unassignedUsers"":[{""userId"":""E8YU"",""username"":""trainer1""},{""userId"":""OEHG"",""username"":""trainee4""}]}"
 ,,,,,assignHierarchy,,,,,POST,,raw,"{
     ""sessionId"":{{adminsessionId}},
     ""data"":{""userIds"":[""F4KX""],""useCaseRole"":""R1"", ""hierarchyId"":""hbbs""}
     
- }",json,http://172.25.1.238:5001/api/assignHierarchy,http,172,5001,api,,"{""status_code"":200,""detail"":""Hierarchy Assigned Successfully""}"
+ }",json,http://172.25.1.238:5001/api/assignHierarchy,http,172,5001,api,200 ok,"{""status_code"":200,""detail"":""Hierarchy Assigned Successfully""}"
 ,,,,,unassignHierarchy,,,,,POST,,raw,"{
     ""sessionId"":{{adminsessionId}},
     ""data"":{""userIds"":[""F4KX""],""useCaseRole"":""R1"", ""hierarchyId"":""hbbs""}
     
- }",json,http://172.25.1.238:5001/api/unassignHierarchy,http,172,5001,api,,"{""status_code"":200,""detail"":""Hierarchy Unassigned Successfully""}"
+ }",json,http://172.25.1.238:5001/api/unassignHierarchy,http,172,5001,api,200 ok,"{""status_code"":200,""detail"":""Hierarchy Unassigned Successfully""}"
 ,,,,,getCreatedHierarchy,,,,,POST,,raw,"{
     ""sessionId"":{{adminsessionId}},
     ""data"":{""userIds"":[""F4KX""],""spaceId"":""uldv"",""useCaseRole"":""R1"", ""hierarchyId"":""hbbs""}
     
- }",json,http://172.25.1.238:5001/api/getCreatedHierarchy,http,172,5001,api,,"{""status_code"":200,""hierarchys"":[{""hierarchyName"":""chatbot"",""hierarchyId"":""xyac""},{""hierarchyName"":""skillpractice"",""hierarchyId"":""sgzd""},{""hierarchyName"":""hbbs"",""hierarchyId"":""pzte""}]}"
+ }",json,http://172.25.1.238:5001/api/getCreatedHierarchy,http,172,5001,api,200 ok,"{""status_code"":200,""hierarchys"":[{""hierarchyName"":""chatbot"",""hierarchyId"":""xyac""},{""hierarchyName"":""skillpractice"",""hierarchyId"":""sgzd""},{""hierarchyName"":""hbbs"",""hierarchyId"":""pzte""}]}"
 ,,,,,getHierarchyRoles,,,,,POST,,raw,"{
     ""sessionId"":{{adminsessionId}},
     ""data"":{""userIds"":[""F4KX""],""spaceId"":""uldv"",""useCaseRole"":""R1"", ""hierarchyId"":""hbbs""}
     
- }",json,http://172.25.1.187:5001/api/getHierarchyRoles,http,172,5001,api,,"{""status_code"":200,""hierarchyRoles"":{""R1"":""Traineer"",""R2"":""Trainee""}}"
+ }",json,http://172.25.1.187:5001/api/getHierarchyRoles,http,172,5001,api,200 ok,"{""status_code"":200,""hierarchyRoles"":{""R1"":""Traineer"",""R2"":""Trainee""}}"
 ,,,,,getHierarchyDetails,,,,,POST,,raw,"{
     ""sessionId"":{{adminsessionId}}
     
-}",json,http://172.25.1.238:5001/api/getHierarchyDetails,http,172,5001,api,,"{""status_code"":200,""hierarchyDetails"":[{""hierarchyName"":""chatbot"",""hierarchyId"":""xyac"",""spaceId"":""iknf"","
+}",json,http://172.25.1.238:5001/api/getHierarchyDetails,http,172,5001,api,200 ok,"{""status_code"":200,""hierarchyDetails"":[{""hierarchyName"":""chatbot"",""hierarchyId"":""xyac"",""spaceId"":""iknf"","
 ,,,,,deleteHierarchy,,,,,POST,,raw,"{
     ""sessionId"":{{adminsessionId}},
       ""hierarchyIds"": [""sgzd""]
     
- }",json,http://172.25.1.238:5001/api/deleteHierarchy,http,172,5001,api,,"{""status_code"":200,""detail"":""Hierarchies Removed Successfully""}"
+ }",json,http://172.25.1.238:5001/api/deleteHierarchy,http,172,5001,api,200 ok,"{""status_code"":200,""detail"":""Hierarchies Removed Successfully""}"
 ,,,,,updateHierarchyName,,,,,POST,,raw,"{
     ""sessionId"":{{adminsessionId}},
     ""data"":{""hierarchyId"": ""sgzd"",""hierarchyName"":""skillpractice""}
     
- }",json,http://172.25.1.238:5001/api/updateHierarchyName,http,172,5001,api,,"{""status_code"":200,""detail"":""Hierarchy Name Updated Successfully""}"
+ }",json,http://172.25.1.238:5001/api/updateHierarchyName,http,172,5001,api,200 ok,"{""status_code"":200,""detail"":""Hierarchy Name Updated Successfully""}"
 ,,,,,updateUserDetails,,,,,POST,,raw,"{
     ""sessionId"":{{adminsessionId}},
     ""data"":{""userId"": ""4UXI"",""newuserId"": ""4UXZ"",""email"": ""user2@gmail.com"", ""newEmail"": ""userS2@gmail.com"",""username"": ""user2"",""newUserName"": ""useree2""}
     
- }",json,http://172.25.1.238:5001/api/updateUserDetails,http,172,5001,api,,"{""status_code"":200,""detail"":""User Details Updated Successfully""}"
+ }",json,http://172.25.1.238:5001/api/updateUserDetails,http,172,5001,api,200 ok,"{""status_code"":200,""detail"":""User Details Updated Successfully""}"
 ,,,,,addHierarchyConfig,,,,,POST,,raw,"{
     ""sessionId"":{{adminsessionId}},
      ""hierarchyId"": ""sgzd"",
@@ -143,10 +143,10 @@ _postman_id,name,schema,_exporter_id,name,item,,,,,,,,,,,,,,,,
      ""agentId"": ""A1""
    }
  }
-",json,http://172.25.1.238:5001/api/addHierarchyConfig,http,172,5001,api,,"{""status_code"":200,""detail"":""Hierarchy Config Added Successfully""}"
+",json,http://172.25.1.238:5001/api/addHierarchyConfig,http,172,5001,api,200 ok,"{""status_code"":200,""detail"":""Hierarchy Config Added Successfully""}"
 ,,,,,getUserDetails,,,,,POST,,raw,"{
     ""sessionId"":{{adminsessionId}}
-}",json,http://172.25.1.235:5001/api/getUserDetails,http,172,5001,api,,"{""status_code"":200,""userDetails"":[{""userId"":""E8YU"",""username"":""trainer"",""email"":""siva2@gmail.com"",""role"":"
+}",json,http://172.25.1.235:5001/api/getUserDetails,http,172,5001,api,200 ok,"{""status_code"":200,""userDetails"":[{""userId"":""E8YU"",""username"":""trainer"",""email"":""siva2@gmail.com"",""role"":"
 ,,,,usecases(user1),initializeInstances,,,,,POST,,raw," {
     ""sessionId"": ""16d915db0da43dfdf4313cec19a653a973fbae0c255cba05a3bd22ed7ca168f8"",
     ""role"": ""R1"",
@@ -183,10 +183,6 @@ _postman_id,name,schema,_exporter_id,name,item,,,,,,,,,,,,,,,,
 ""That's correct! The 'pwd' command is used in Linux to display the current directory. Just remember to explain that 'pwd' stands for 'print working directory' to show your understanding. - Brillius AI""
 ]
 }
-}
-
-
-
 
 
 
